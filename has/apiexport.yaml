@@ -1,0 +1,22 @@
+apiVersion: apis.kcp.dev/v1alpha1
+kind: APIExport
+metadata:
+  name: appstudio-identity-has
+spec:
+  permissionClaims:
+  - group: ""
+    resource: "secrets"
+    verbs: ["get", "list", "watch"]
+  - group: ""
+    resource: "configmaps"
+    verbs: ["get", "list", "watch"]
+  - identityHash: <IDENTITY-HASH>
+    group: "appstudio.redhat.com"
+    resource: "environments"
+  - identityHash: <IDENTITY-HASH>
+    group: "appstudio.redhat.com"
+    resource: "applicationsnapshotenvironmentbindings"
+  latestResourceSchemas:
+    - v202208241415.applications.appstudio.redhat.com
+    - v202208241415.componentdetectionqueries.appstudio.redhat.com
+    - v202208241415.components.appstudio.redhat.com
