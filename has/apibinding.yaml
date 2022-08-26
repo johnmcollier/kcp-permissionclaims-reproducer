@@ -14,9 +14,9 @@ spec:
       - group: ""
         resource: "configmaps"
         verbs: ["get", "list", "watch"]
-      - identityHash: <identity-hash>
+      - identityHash: 5d8e0fa5f9a10dbff668aad2cd63777e061c837e3f0a2f1adda15f7acae9fd53
         group: "appstudio.redhat.com"
         resource: "environments"
-      - identityHash: <identity-hash>
+      - identityHash: 5d8e0fa5f9a10dbff668aad2cd63777e061c837e3f0a2f1adda15f7acae9fd53
         group: "appstudio.redhat.com"
         resource: "applicationsnapshotenvironmentbindings"
