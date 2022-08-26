@@ -22,7 +22,7 @@ To reproduce:
    kubectl get apiexport gitops -o jsonpath={.status.identityHash}
    ```
    
-5) With the identity hash known, edit `has/apiexport.yaml` and `has/apibinding.yaml` and change `<identity-hash> to the identity hash that was retrieved.
+5) With the identity hash known, edit `has/apiexport.yaml` and `has/apibinding.yaml` and change `<identity-hash>` to the identity hash that was retrieved.
 
 6) Create a new workspace, `has`:
    
